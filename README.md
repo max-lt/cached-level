@@ -1,4 +1,4 @@
-###cached-level
+### cached-level
 
 level interfaced as redis (promised).
 
@@ -27,9 +27,9 @@ instance.quit().then(() => ...)
 
 Classes exposed:
 
-Revel parameters: dbName, levelOptions (see [level]([level-link]))
-Redis parameters: redisOptions (see [redis]([redis-link]))
-CacheOnly parameters: cacheOptions (see [lru]([lru-link]))
+Revel parameters: dbName, levelOptions (see [level][level-link])<br>
+Redis parameters: redisOptions (see [redis][redis-link])<br>
+CacheOnly parameters: cacheOptions (see [lru][lru-link])
 
 ```
 const Revel = require('cached-level').Revel;
@@ -37,10 +37,10 @@ const Redis = require('cached-level').Redis;
 const CacheOnly = require('cached-level').CacheOnly;
 ```
 
-Possibility to add a cache layer (from [lru-cache]([lru-link])):
+Possibility to add a cache layer (from [lru-cache][lru-link]):
 
-CachedRevel parameters: dbName, cacheOptions (see [lru]([lru-link])), levelOptions (see [level]([level-link]))
-CachedRedis parameters: null  , cacheOptions (see [lru]([lru-link])), redisOptions (see [redis]([redis-link]))
+CachedRevel parameters: dbName, cacheOptions (see [lru][lru-link]), levelOptions (see [level][level-link])<br>
+CachedRedis parameters: null  , cacheOptions (see [lru][lru-link]), redisOptions (see [redis][redis-link])
 
 
 ```
