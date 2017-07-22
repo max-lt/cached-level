@@ -47,4 +47,14 @@ declare module 'cached-level' {
 
     }
 
+    class CachedRevel extends RevelInterface {
+        constructor(dbName: string, cacheOptions?: LRU.Options, levelOptions?: Level.levelupOptions)
+    }
+
+    class CachedRedis extends RevelInterface {
+        constructor(dbName: null, cacheOptions?: LRU.Options, redisOptions?: ClientOpts | any)
+    }
+
+    export = {Cache, Revel, Redis, CacheOnly, CachedRevel, CachedRedis}
+
 }
