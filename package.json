@@ -1,0 +1,26 @@
+{
+  "name": "cached-level",
+  "version": "0.0.1",
+  "dependencies": {
+    "level": "^1.7.0",
+    "lru-cache": "^4.1.1"
+  },
+  "scripts": {
+    "clear": "rm db-test-* -rf",
+    "prebenchmark": "npm run clear",
+    "benchmark": "node benchmark",
+    "postbenchmark": "npm run clear",
+    "pretest": "npm run clear",
+    "test": "mocha test/test.js",
+    "posttest": "npm run clear"
+  },
+  "devDependencies": {
+    "@types/levelup": "0.0.30",
+    "@types/lru-cache": "^4.0.0",
+    "@types/node": "^8.0.14",
+    "@types/redis": "^2.6.0",
+    "benchmark": "^2.1.4",
+    "microtime": "^2.1.6",
+    "mocha": "^3.4.2"
+  }
+}
